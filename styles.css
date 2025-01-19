@@ -1,0 +1,76 @@
+/* text styles */
+h4{
+    text-align: center;
+    letter-spacing: 20px;
+    padding-top:60px;
+    padding-bottom:40px;
+}
+
+/* container styles */
+body{
+    height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(32, 32, 32);
+}
+#container{
+    margin: 15px;
+}
+#introSection{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-top:60px;
+    margin-bottom:60px;
+}
+#codeBlock{
+    width: 70%;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    padding: 40px;
+    line-height:25px;
+}
+#contactSkills{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align:center;
+    border: 1px solid rgb(32, 32, 32);
+}
+#contactBlock{
+    width: 100%;
+    height: 50%;
+}
+#skillsBlock{
+    width: 100%;
+    height: 50%;
+    border: 1px solid rgb(32, 32, 32);
+}
+hr{
+    border:none;
+    height:3px;
+    background-color:rgb(32, 32, 32);
+}
+#projectSection{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+}
+.project{
+    display:flex;
+    flex-basis: 300px;
+    flex-direction:column;
+    margin:20px;
+    margin-bottom:20px;
+}
+
+.project img{
+    width: 100%;
+    border-radius:20px;
+}
+
+@media only screen and (max-width:600px) {
+    
+}
