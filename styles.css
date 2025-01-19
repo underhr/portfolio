@@ -56,7 +56,7 @@ hr{
     display:flex;
     flex-wrap: wrap;
     align-items:center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .project{
     display:flex;
@@ -66,11 +66,27 @@ hr{
     margin-bottom:20px;
 }
 
+.project :hover{
+
+}
+
 .project img{
     width: 100%;
     border-radius:20px;
 }
 
-@media only screen and (max-width:600px) {
-    
+/* tablet view */
+@media only screen and (max-width:800px) {
+    #introSection{
+        flex-direction: column;
+    }
+    #codeBlock{
+        width:90%;
+        padding:20px;
+        margin:auto;
+    }
+    #contactSkills{
+        flex-direction: row;
+        width:100%;
+    }
 }
