@@ -27,7 +27,9 @@ body{
     background-color: rgb(32, 32, 32);
     color: white;
     padding: 40px;
-    line-height:25px;
+    line-height:30px;
+    white-space:pre-wrap;
+    word-wrap: break-word;
 }
 #contactSkills{
     width: 30%;
@@ -37,6 +39,8 @@ body{
     flex-direction: column;
     text-align:center;
     border: 1px solid rgb(32, 32, 32);
+    gap:20px;
+    background-color: rgb(234, 234, 234);
 }
 #contactBlock{
     width: 100%;
@@ -45,7 +49,6 @@ body{
 #skillsBlock{
     width: 100%;
     height: 50%;
-    border: 1px solid rgb(32, 32, 32);
 }
 hr{
     border:none;
@@ -60,19 +63,24 @@ hr{
 }
 .project{
     display:flex;
-    flex-basis: 300px;
+    width: 300px;
     flex-direction:column;
+    padding:20px;
     margin:20px;
     margin-bottom:20px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 20px;
 }
 
-.project :hover{
-
+.project:hover{
+    scale: 1.03;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .project img{
     width: 100%;
     border-radius:20px;
+    margin:auto;
 }
 
 /* tablet view */
