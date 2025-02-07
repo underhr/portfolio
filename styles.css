@@ -1,4 +1,8 @@
 /* text styles */
+h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 h4{
     text-align: center;
     letter-spacing: 20px;
