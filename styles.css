@@ -68,7 +68,3 @@ hr{
 .project p{
     line-height: 24px;
 }
-
-/* tablet view */
-@media only screen and (max-width:800px) {
-}
