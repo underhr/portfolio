@@ -24,11 +24,17 @@ $purple: rgba(171, 103, 208, 0.9);
     //border: 1px solid black;
 }
 
+body {
+    min-height: 100vh;
+    //@include flex (space-evenly, stretch, column);
+}
+
 nav {
     @include flex(space-evenly, center, row);
-    height: 100px;
+    min-height: 100px;
     box-shadow: 0px 10px 10px $lightPurple;
     position: sticky;
+    justify-self: flex-start;
     background-color: white;
     top: 0;
     a {
@@ -44,11 +50,12 @@ nav {
 }
 
 main {
+    padding: 20px 0px;
     @include flex(center, center, column);
-    min-height: calc(100vh - 100px);
     @include gradientText(to top right);
     cursor: default;
     user-select: none;
+    overflow: scroll;
     h1 {
         font-size: 4em;
     }
@@ -59,6 +66,7 @@ main {
         font-weight: 400;
         font-size: 1.5em;
     }
+    //home
     hr {
         height: 3px;
         width: 400px;
@@ -69,6 +77,8 @@ main {
     #languages {
         margin-top: 25px;
         @include flex(center, center, row);
+        flex-wrap: wrap;
+        padding: 0px 15px;
         gap: 20px;
         img {
             height: 100px;
@@ -175,3 +185,44 @@ main {
 .hidden {
     display: none !important;
 }
+
+.active {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 525px) {
+    main form {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    nav {
+        flex-direction: column;
+        height: 200px;
+    }
+    main {
+        text-align: center;
+        h1 {
+            font-size: 3em;
+        }
+        h2 {
+            font-size: 1.28em;
+        }
+        hr {
+            margin: 50px;
+            width: 100px;
+        }
+        #projectSort {
+            flex-direction: column;
+            height: 100px;
+        }
+    }
+}
+@media only screen and (max-width: 350px) {
+}
+/*
+contact: 515px
+projects: 450px
+about me: 
+*/
