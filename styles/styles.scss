@@ -1,6 +1,9 @@
 $lightPurple: rgb(228, 228, 245);
+$shadow: rgba(0, 0, 0, 0.1);
+$mediumPurple: rgb(213, 193, 236);
 $blue: rgba(16, 9, 218, 0.9);
 $purple: rgba(171, 103, 208, 0.9);
+$mainPurple: rgba(52, 24, 144, 0.9);
 
 @mixin flex($justify, $align, $direction) {
     display: flex;
@@ -32,7 +35,7 @@ body {
 nav {
     @include flex(space-evenly, center, row);
     min-height: 100px;
-    box-shadow: 0px 10px 10px $lightPurple;
+    box-shadow: 0px 10px 10px $shadow;
     position: sticky;
     justify-self: flex-start;
     background-color: white;
@@ -40,7 +43,7 @@ nav {
     a {
         text-decoration: none;
         font-size: 1.4em;
-        font-weight: 450;
+        font-weight: 400;
         @include gradientText(to top right);
         &:hover {
             @include gradientText(to bottom left);
@@ -52,19 +55,22 @@ nav {
 main {
     padding: 20px 0px;
     @include flex(center, center, column);
-    @include gradientText(to top right);
     cursor: default;
     user-select: none;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
     h1 {
         font-size: 4em;
+        @include gradientText(to top right);
     }
     h2 {
         font-size: 1.7em;
+        @include gradientText(to top right);
     }
     h3 {
         font-weight: 400;
         font-size: 1.5em;
+        @include gradientText(to top right);
     }
     //home
     hr {
@@ -72,7 +78,7 @@ main {
         width: 400px;
         margin: 100px;
         border: none;
-        background-color: $lightPurple;
+        background-color: $mediumPurple;
     }
     #languages {
         margin-top: 25px;
@@ -89,19 +95,21 @@ main {
         margin: 50px;
         line-height: 150%;
         text-align: justify;
+        color: $mainPurple;
     }
     #selfie {
         height: 200px;
         border-radius: 50%;
         border: 5px solid white;
-        outline: 10px solid $lightPurple;
+        outline: 10px solid $mediumPurple;
     }
     //projects
     #projectSort {
+        @include gradientText(to top right);
         width: 100%;
         @include flex(space-evenly, center, row);
         height: 75px;
-        box-shadow: 0px 10px 10px $lightPurple;
+        box-shadow: 0px 10px 10px $shadow;
         margin: 50px;
         span:hover {
             @include gradientText(to bottom left);
@@ -124,7 +132,7 @@ main {
         label {
             margin-left: 15px;
             font-size: 1.2em;
-            font-weight: 450;
+            font-weight: 400;
         }
         input, textarea {
             width: 100%;
@@ -169,8 +177,9 @@ main {
     padding: 25px;
     @include flex(center, center, column);
     gap: 25px;
-    box-shadow: 0px 0px 10px $lightPurple;
+    box-shadow: 0px 0px 10px $shadow;
     border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     img {
         height: 150px;
         width: 250px;
@@ -179,6 +188,10 @@ main {
     }
     p {
         margin: 0;
+    }
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 12px 20px $shadow;
     }
 }
 
@@ -211,7 +224,7 @@ main {
         }
         hr {
             margin: 100px;
-            width: 100px;
+            width: 80vw;
         }
         #projectSort {
             flex-direction: column;

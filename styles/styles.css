@@ -17,7 +17,7 @@ nav {
   align-items: center;
   flex-direction: row;
   min-height: 100px;
-  box-shadow: 0px 10px 10px rgb(228, 228, 245);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   justify-self: flex-start;
   background-color: white;
@@ -26,7 +26,7 @@ nav {
 nav a {
   text-decoration: none;
   font-size: 1.4em;
-  font-weight: 450;
+  font-weight: 400;
   background-image: linear-gradient(to top right, rgba(16, 9, 218, 0.9), rgba(171, 103, 208, 0.9));
   -webkit-background-clip: text;
           background-clip: text;
@@ -46,32 +46,41 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(to top right, rgba(16, 9, 218, 0.9), rgba(171, 103, 208, 0.9));
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
   cursor: default;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 main h1 {
   font-size: 4em;
+  background-image: linear-gradient(to top right, rgba(16, 9, 218, 0.9), rgba(171, 103, 208, 0.9));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 main h2 {
   font-size: 1.7em;
+  background-image: linear-gradient(to top right, rgba(16, 9, 218, 0.9), rgba(171, 103, 208, 0.9));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 main h3 {
   font-weight: 400;
   font-size: 1.5em;
+  background-image: linear-gradient(to top right, rgba(16, 9, 218, 0.9), rgba(171, 103, 208, 0.9));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 main hr {
   height: 3px;
   width: 400px;
   margin: 100px;
   border: none;
-  background-color: rgb(228, 228, 245);
+  background-color: rgb(213, 193, 236);
 }
 main #languages {
   margin-top: 25px;
@@ -90,21 +99,26 @@ main p {
   margin: 50px;
   line-height: 150%;
   text-align: justify;
+  color: rgba(52, 24, 144, 0.9);
 }
 main #selfie {
   height: 200px;
   border-radius: 50%;
   border: 5px solid white;
-  outline: 10px solid rgb(228, 228, 245);
+  outline: 10px solid rgb(213, 193, 236);
 }
 main #projectSort {
+  background-image: linear-gradient(to top right, rgba(16, 9, 218, 0.9), rgba(171, 103, 208, 0.9));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   height: 75px;
-  box-shadow: 0px 10px 10px rgb(228, 228, 245);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   margin: 50px;
 }
 main #projectSort span:hover {
@@ -136,7 +150,7 @@ main form {
 main form label {
   margin-left: 15px;
   font-size: 1.2em;
-  font-weight: 450;
+  font-weight: 400;
 }
 main form input, main form textarea {
   width: 100%;
@@ -189,8 +203,9 @@ main form #submit {
   align-items: center;
   flex-direction: column;
   gap: 25px;
-  box-shadow: 0px 0px 10px rgb(228, 228, 245);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .project img {
   height: 150px;
@@ -201,6 +216,10 @@ main form #submit {
 }
 .project p {
   margin: 0;
+}
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.1);
 }
 
 .hidden {
@@ -232,7 +251,7 @@ main form #submit {
   }
   main hr {
     margin: 100px;
-    width: 100px;
+    width: 80vw;
   }
   main #projectSort {
     flex-direction: column;
