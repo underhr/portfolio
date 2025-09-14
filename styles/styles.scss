@@ -210,19 +210,13 @@ main {
             font-size: 1.28em;
         }
         hr {
-            margin: 50px;
+            margin: 100px;
             width: 100px;
         }
         #projectSort {
             flex-direction: column;
-            height: 100px;
+            height: 150px;
+            line-height: 225%;
         }
     }
 }
-@media only screen and (max-width: 350px) {
-}
-/*
-contact: 515px
-projects: 450px
-about me: 
-*/

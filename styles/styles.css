@@ -231,16 +231,12 @@ main form #submit {
     font-size: 1.28em;
   }
   main hr {
-    margin: 50px;
+    margin: 100px;
     width: 100px;
   }
   main #projectSort {
     flex-direction: column;
-    height: 100px;
+    height: 150px;
+    line-height: 225%;
   }
-}
-/*
-contact: 515px
-projects: 450px
-about me: 
-*//*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
