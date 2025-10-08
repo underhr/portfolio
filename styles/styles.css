@@ -208,7 +208,7 @@ main form #submit {
   align-items: center;
   flex-direction: column;
   gap: 25px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
