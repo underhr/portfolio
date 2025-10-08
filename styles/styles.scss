@@ -1,5 +1,5 @@
 $lightPurple: rgb(228, 228, 245);
-$shadow: rgba(0, 0, 0, 0.1);
+$shadow: rgba(0, 0, 0, 0.2);
 $mediumPurple: rgb(213, 193, 236);
 $blue: rgba(16, 9, 218, 0.9);
 $purple: rgba(171, 103, 208, 0.9);
@@ -41,6 +41,7 @@ nav {
     justify-self: flex-start;
     background-color: white;
     top: 0;
+    z-index: 1;
     a {
         text-decoration: none;
         font-size: 1.4em;

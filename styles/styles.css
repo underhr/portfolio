@@ -18,11 +18,12 @@ nav {
   flex-direction: row;
   width: 100%;
   min-height: 100px;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
   position: sticky;
   justify-self: flex-start;
   background-color: white;
   top: 0;
+  z-index: 1;
 }
 nav a {
   text-decoration: none;
@@ -119,7 +120,7 @@ main #projectSort {
   align-items: center;
   flex-direction: row;
   height: 75px;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
   margin: 50px;
 }
 main #projectSort span:hover {
@@ -204,7 +205,7 @@ main form #submit {
   align-items: center;
   flex-direction: column;
   gap: 25px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -220,7 +221,7 @@ main form #submit {
 }
 .project:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
 }
 
 .hidden {
