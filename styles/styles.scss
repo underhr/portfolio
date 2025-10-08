@@ -1,6 +1,5 @@
-$lightPurple: rgb(228, 228, 245);
+$lightPurple: rgb(159, 159, 199);
 $shadow: rgba(0, 0, 0, 0.2);
-$mediumPurple: rgb(213, 193, 236);
 $blue: rgba(16, 9, 218, 0.9);
 $purple: rgba(171, 103, 208, 0.9);
 $mainPurple: rgba(52, 24, 144, 0.9);
@@ -80,7 +79,7 @@ main {
         width: 400px;
         margin: 100px;
         border: none;
-        background-color: $mediumPurple;
+        background-color: $lightPurple;
     }
     #languages {
         margin-top: 25px;
@@ -103,7 +102,7 @@ main {
         height: 200px;
         border-radius: 50%;
         border: 5px solid white;
-        outline: 10px solid $mediumPurple;
+        outline: 10px solid $lightPurple;
     }
     //projects
     #projectSort {
@@ -146,6 +145,9 @@ main {
             padding-left: 20px;
             box-sizing: border-box;
             font-size: 1.1em;
+            &:focus {
+                border: 3px solid $purple;
+            }
         }
         #submit {
             background-color: $lightPurple;
