@@ -1,5 +1,5 @@
 $lightPurple: rgb(159, 159, 199);
-$shadow: rgba(0, 0, 0, 0.2);
+$shadow: hsla(0, 0%, 0%, 0.1);
 $blue: rgba(16, 9, 218, 0.9);
 $purple: rgba(171, 103, 208, 0.9);
 $mainPurple: rgba(52, 24, 144, 0.9);
@@ -27,7 +27,7 @@ $mainPurple: rgba(52, 24, 144, 0.9);
 }
 
 body {
-    min-height: 100vh;
+    min-height: 100dvh;
     //@include flex (space-evenly, stretch, column);
 }
 
@@ -74,12 +74,8 @@ main {
         @include gradientText(to top right);
     }
     //home
-    hr {
-        height: 3px;
-        width: 400px;
-        margin: 100px;
-        border: none;
-        background-color: $lightPurple;
+    header {
+        margin-bottom: 100px;
     }
     #languages {
         margin-top: 25px;
@@ -95,6 +91,7 @@ main {
     p {
         margin: 50px;
         line-height: 150%;
+        letter-spacing: .5px;
         text-align: justify;
         color: $mainPurple;
     }

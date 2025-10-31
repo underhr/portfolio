@@ -8,7 +8,7 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 nav {
@@ -18,7 +18,7 @@ nav {
   flex-direction: row;
   width: 100%;
   min-height: 100px;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 10px hsla(0, 0%, 0%, 0.1);
   position: sticky;
   justify-self: flex-start;
   background-color: white;
@@ -77,12 +77,8 @@ main h3 {
           background-clip: text;
   color: transparent;
 }
-main hr {
-  height: 3px;
-  width: 400px;
-  margin: 100px;
-  border: none;
-  background-color: rgb(159, 159, 199);
+main header {
+  margin-bottom: 100px;
 }
 main #languages {
   margin-top: 25px;
@@ -100,6 +96,7 @@ main #languages img {
 main p {
   margin: 50px;
   line-height: 150%;
+  letter-spacing: 0.5px;
   text-align: justify;
   color: rgba(52, 24, 144, 0.9);
 }
@@ -120,7 +117,7 @@ main #projectSort {
   align-items: center;
   flex-direction: row;
   height: 75px;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 10px hsla(0, 0%, 0%, 0.1);
   margin: 50px;
 }
 main #projectSort span:hover {
@@ -208,7 +205,7 @@ main form #submit {
   align-items: center;
   flex-direction: column;
   gap: 25px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid hsla(0, 0%, 0%, 0.1);
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -224,7 +221,7 @@ main form #submit {
 }
 .project:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 12px 20px hsla(0, 0%, 0%, 0.1);
 }
 
 .hidden {
