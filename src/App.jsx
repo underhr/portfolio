@@ -3,7 +3,7 @@ import Nav from './Nav/Nav.jsx'
 import Content from './Content.jsx'
 
 export default function App() {
-  const [current, setCurrent] = useState("home");
+  const [current, setCurrent] = useState("Home");
   const [isDark, setIsDark] = useState(false);
 
   const toggleDark = () => {
