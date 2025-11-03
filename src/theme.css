@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+:root {
+    --bg-lighter: #E6E3DB;
+    --bg-darker: #D5D0C3;
+    --text-lighter: #395649;
+    --text-darker: #293D34;
+    --accent: #735290;
+}
+  
+[data-theme="dark"] {
+    --bg-lighter: #395649;
+    --bg-darker: #293D34;
+    --text-lighter: #E6E3DB;
+    --text-darker: #D5D0C3;
+}
