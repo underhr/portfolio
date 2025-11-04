@@ -34,7 +34,7 @@ export default function Contact() {
                 </fieldset>
 
                 <input type="submit" name="submit" id="submit"
-                    className="bg-(--text-lighter) text-(--bg-lighter) p-4 rounded hover:bg-(--bg-lighter) hover:text-(--text-lighter) cursor-pointer border"></input>
+                    className="bg-(--text-lighter) text-(--bg-lighter) p-4 rounded hover:bg-(--bg-lighter) hover:text-(--text-lighter) cursor-pointer border  transition-colors duration-300"></input>
             </form>
         </main>
     );

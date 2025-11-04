@@ -6,7 +6,7 @@ export default function Project({ filter, type, title, description }) {
     <a 
       href={`https://underhr.github.io/${dashedTitle}/`}
       target="_blank" 
-      className={`w-60 p-5 flex flex-col gap-3 bg-(--bg-darker) text-(--text-darker) rounded-2xl ${(filter !== type && filter !== 'All') ? `hidden` : `flex` }`}>
+      className={`w-60 p-5 flex flex-col gap-3 bg-(--bg-darker) text-(--text-darker) transition-colors duration-300 rounded-2xl ${(filter !== type && filter !== 'All') ? `hidden` : `flex` }`}>
 
       <img 
           className="h-30 w-full rounded-2xl" 

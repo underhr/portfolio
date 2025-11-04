@@ -8,7 +8,7 @@ export default function Projects() {
         <main className='p-5 sm:p-10 flex flex-col gap-10 flex-1'>
             <h1 className="font-bold text-4xl">Projects</h1>
 
-            <div className='flex justify-evenly lg:justify-center lg:gap-30 font-bold text-sm text-(--text-darker)'>
+            <div className='flex justify-evenly lg:justify-center lg:gap-30 font-bold text-sm text-(--text-darker) transition-colors duration-300'>
                 <FilterTab filter={'All'} setFilter={setFilter} currentFilter={filter}/>
                 <FilterTab filter={'Freelance'} setFilter={setFilter} currentFilter={filter}/>
                 <FilterTab filter={'Frontend Mentor'} setFilter={setFilter} currentFilter={filter}/>
