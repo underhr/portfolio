@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Color from "./Color";
 
 export default function ColorPalette({ paletteOpen, setTheme }) {
@@ -15,7 +14,6 @@ export default function ColorPalette({ paletteOpen, setTheme }) {
             <Color color="green" setTheme={setTheme}/>
             <Color color="blue" setTheme={setTheme}/>
             <Color color="purple" setTheme={setTheme}/>
-
         </div>
     );
 }
