@@ -1,16 +1,59 @@
 @import "tailwindcss";
 
-:root {
-    --bg-lighter: #E6E3DB;
-    --bg-darker: #D5D0C3;
-    --text-lighter: #395649;
-    --text-darker: #293D34;
-    --accent: #735290;
+/* === LIGHT THEMES === */
+[data-theme="green"] {
+  --bg-lighter: #CDC7B6;
+  --bg-darker: #BCB49F;
+  --text-lighter: #395649;
+  --text-darker: #293D34;
 }
-  
-[data-theme="dark"] {
-    --bg-lighter: #395649;
-    --bg-darker: #293D34;
-    --text-lighter: #E6E3DB;
-    --text-darker: #D5D0C3;
+
+[data-theme="red"] {
+  --bg-lighter: #FEE2E2;
+  --bg-darker: #FCA5A5;
+  --text-lighter: #7F1D1D;
+  --text-darker: #991B1B;
+}
+
+[data-theme="blue"] {
+  --bg-lighter: #DBEAFE;
+  --bg-darker: #93C5FD;
+  --text-lighter: #1E3A8A;
+  --text-darker: #1E40AF;
+}
+
+[data-theme="violet"] {
+  --bg-lighter: #EDE9FE;
+  --bg-darker: #C4B5FD;
+  --text-lighter: #5B21B6;
+  --text-darker: #4C1D95;
+}
+
+/* === DARK THEMES === */
+[data-theme="green-dark"] {
+  --bg-lighter: #395649;
+  --bg-darker: #293D34;
+  --text-lighter: #CDC7B6;
+  --text-darker: #BCB49F;
+}
+
+[data-theme="red-dark"] {
+  --bg-lighter: #7F1D1D;
+  --bg-darker: #991B1B;
+  --text-lighter: #FEE2E2;
+  --text-darker: #FCA5A5;
+}
+
+[data-theme="blue-dark"] {
+  --bg-lighter: #1E3A8A;
+  --bg-darker: #1E40AF;
+  --text-lighter: #DBEAFE;
+  --text-darker: #93C5FD;
+}
+
+[data-theme="violet-dark"] {
+  --bg-lighter: #5B21B6;
+  --bg-darker: #4C1D95;
+  --text-lighter: #EDE9FE;
+  --text-darker: #C4B5FD;
 }
