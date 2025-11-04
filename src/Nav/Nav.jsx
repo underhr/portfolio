@@ -7,10 +7,10 @@ export default function Nav({ toggleDark, setCurrent}) {
     const [navOpen, setNavOpen] = useState(false); 
 
     return(
-        <nav className='flex flex-row justify-between items-start bg-(--bg-darker) text-(--text-darker) transition-colors duration-300 absolute top-0 w-dvw p-10 z-1 sm:flex-col sm:items-center sm:h-dvh sm:w-auto sm:left-0'>
-        <MenuIcon className="cursor-pointer sm:hidden" onClick={() => setNavOpen(!navOpen)} fontSize='large'/>
+        <nav className='flex flex-row justify-between items-start gap-4 bg-(--bg-darker) text-(--text-darker) transition-colors duration-300 w-full sm:w-auto p-5 sm:p-10 sm:h-screen sm:flex-col sm:items-center'>
+        <MenuIcon className="cursor-pointer block sm:hidden!" onClick={() => setNavOpen(!navOpen)} fontSize='large'/>
 
-        <ul className={`flex-col gap-4 font-semibold text-lg
+        <ul className={`flex-col gap-1 font-semibold text-lg w-full sm:flex
           ${navOpen ? 'flex' : 'hidden'}`}>
             {/* <NavItem /> */}
             <NavItem name="Home" setCurrent={setCurrent}/>

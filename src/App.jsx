@@ -10,10 +10,7 @@ export default function App() {
     setIsDark(prev => !prev);
   };
   return (
-    <div
-      data-theme={isDark ? "dark" : "light"}
-      className="min-h-screen bg-(--bg-lighter) text-(--text-lighter) transition-colors duration-300 flex items-center justify-center"
-    >
+    <div data-theme={isDark ? "dark" : "light"} className="min-h-screen flex flex-col sm:flex-row bg-(--bg-lighter) text-(--text-lighter) transition-colors duration-300">
       <Nav toggleDark={toggleDark} setCurrent={setCurrent}/>
       <Content page={current}/>
     </div>
