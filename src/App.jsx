@@ -12,7 +12,9 @@ export default function App() {
   return (
     <div data-theme={isDark ? "dark" : "light"} className="min-h-screen flex flex-col sm:flex-row bg-(--bg-lighter) text-(--text-lighter) transition-colors duration-300">
       <Nav toggleDark={toggleDark} setCurrent={setCurrent}/>
-      <Content page={current}/>
+      <div className="pt-20 sm:pt-0 sm:pl-[180px] flex items-center justify-center w-full min-h-screen">
+        <Content page={current}/>
+      </div>
     </div>
   )
 }
