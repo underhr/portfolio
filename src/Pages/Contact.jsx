@@ -1,11 +1,3 @@
-function FormItem() {
-    return(
-        <fieldset>
-            <label for="name">Name</label>
-            <input type="name" name="name" className="border rounded w-full p-2.5 focus:outline-0" />
-        </fieldset>
-    );
-}
 
 export default function Contact() {
     return(
