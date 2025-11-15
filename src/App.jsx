@@ -4,8 +4,8 @@ import Content from './Content.jsx'
 
 export default function App() {
   const [current, setCurrent] = useState("Home");
-  const [isDark, setIsDark] = useState(true);
-  const [theme, setTheme] = useState("blue");
+  const [isDark, setIsDark] = useState(false);
+  const [theme, setTheme] = useState("london-fog");
   const [loaded, setLoaded] = useState(false);
 
   const toggleDark = () => setIsDark(prev => !prev);
