@@ -15,24 +15,24 @@ export default function Projects() {
                 <FilterTab filter={'Personal'} setFilter={setFilter} currentFilter={filter}/>
             </div>
 
-            <div className='flex flex-wrap justify-evenly gap-5 sm:gap-10'>
+            <div className='flex flex-wrap justify-evenly gap-4 sm:gap-10'>
                 <Project 
                     filter={filter}
                     type="Freelance"
                     title="Mcdonald Construction" 
                     description="This was my first freelance project, although it is no longer in use." />
+                    
+                <Project 
+                    filter={filter}
+                    type="Personal"
+                    title="My Portfolio" 
+                    description="You've been here the whole time! This page was created with React, Vite, and Tailwind." />
 
                 <Project
                     filter={filter}
                     type="Personal"
                     title="Gulf Coast Escape Room" 
                     description="I build this website to practice making a full page for a real business, where I work." />
-                    
-                <Project 
-                    filter={filter}
-                    type="Personal"
-                    title="Rock Paper Scissors" 
-                    description="This is the first project I created in Javascript without needing to look anything up." />
 
                 <Project 
                     filter={filter}
@@ -43,13 +43,13 @@ export default function Projects() {
                 <Project 
                     filter={filter}
                     type="Frontend Mentor"
-                    title="Blog Preview Card" 
+                    title="Frontend Quiz App" 
                     description="Yet another Frontend Mentor project... More detailed description to come!." />
                     
                 <Project 
                     filter={filter}
                     type="Frontend Mentor"
-                    title="Four Card Feature Section" 
+                    title="FAQ Accordion" 
                     description="Yet another Frontend Mentor project... More detailed description to come!." />
                     
                 <Project 
@@ -61,19 +61,13 @@ export default function Projects() {
                 <Project 
                     filter={filter}
                     type="Frontend Mentor"
-                    title="Product Preview Card" 
+                    title="Tip Calculator App" 
                     description="Yet another Frontend Mentor project... More detailed description to come!." />
                     
                 <Project 
                     filter={filter}
                     type="Frontend Mentor"
-                    title="QR Code" 
-                    description="Yet another Frontend Mentor project... More detailed description to come!." />
-                    
-                <Project 
-                    filter={filter}
-                    type="Frontend Mentor"
-                    title="Recipe Page" 
+                    title="Password Generator App" 
                     description="Yet another Frontend Mentor project... More detailed description to come!." />
                     
                 <Project 
@@ -81,19 +75,6 @@ export default function Projects() {
                     type="Frontend Mentor"
                     title="Results Summary Component" 
                     description="Yet another Frontend Mentor project... More detailed description to come!." />
-                    
-                <Project 
-                    filter={filter}
-                    type="Frontend Mentor"
-                    title="Social Links Profile" 
-                    description="Yet another Frontend Mentor project... More detailed description to come!." />
-                    
-                <Project 
-                    filter={filter}
-                    type="Frontend Mentor"
-                    title="Testimonials Grid Section" 
-                    description="Yet another Frontend Mentor project... More detailed description to come!." />
-                    
             </div>
         </main>
     );
