@@ -3,7 +3,7 @@ function Logo({ src, alt }) {
     return(
         <div className="flex flex-col items-center gap-2 sm:gap-4">
             <img src={`./languages/${src}.svg`} alt={`${alt} Logo`} className="h-18 sm:h-20"/>
-            <p className="text-xl sm:text-2xl text-(--text-darker)">{alt}</p>
+            <p className="text-xl sm:text-2xl text-(--text-darker) transition-colors duration-300">{alt}</p>
         </div>
     );
 }
@@ -21,7 +21,7 @@ export default function Home() {
                 </h2>
             </header>
 
-            <hr className='p-1 sm:p-2 lg:p-3 bg-(--bg-darker) border-0 transition-colors duration-300' />
+            <hr className='p-1 sm:p-2 lg:p-3 bg-(--bg-darker)transition-colors duration-300 border-0' />
 
             <h2 className="text-2xl sm:text-3xl lg:text-4xl text(--text-darker) w-fit self-center font-semibold">
                 My Skills
