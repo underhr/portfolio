@@ -30,18 +30,6 @@ export default function Projects() {
 
                 <Project 
                     filter={filter}
-                    type="Personal"
-                    title="Tilt N Shout" 
-                    description="I made this to practice JavaScript by recreating a real life game" />
-
-                <Project 
-                    filter={filter}
-                    type="Freelance"
-                    title="Mcdonald Construction" 
-                    description="This was my first freelance project, although it is no longer in use." />
-
-                <Project 
-                    filter={filter}
                     type="Frontend Mentor"
                     title="Frontend Quiz App" 
                     description="Yet another Frontend Mentor project... More detailed description to come!." />
@@ -75,6 +63,12 @@ export default function Projects() {
                     type="Frontend Mentor"
                     title="Results Summary Component" 
                     description="Yet another Frontend Mentor project... More detailed description to come!." />
+
+                <Project 
+                    filter={filter}
+                    type="Freelance"
+                    title="Mcdonald Construction" 
+                    description="This was my first freelance project, although it is no longer in use." />
             </div>
         </main>
     );
