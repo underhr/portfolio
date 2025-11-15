@@ -32,37 +32,37 @@ export default function Projects() {
                     filter={filter}
                     type="Frontend Mentor"
                     title="Frontend Quiz App" 
-                    description="Yet another Frontend Mentor project... More detailed description to come!." />
+                    description="This is probably the most complicated project I have created so far, and was a lot of fun to make! I created it using vanilla JS." />
                     
                 <Project 
                     filter={filter}
                     type="Frontend Mentor"
                     title="FAQ Accordion" 
-                    description="Yet another Frontend Mentor project... More detailed description to come!." />
+                    description="This project was to practice best accessibility practices in an FAQ accordion." />
                     
                 <Project 
                     filter={filter}
                     type="Frontend Mentor"
                     title="Meet Landing Page" 
-                    description="Yet another Frontend Mentor project... More detailed description to come!." />
+                    description="Yet another Frontend Mentor project... More detailed description to come!" />
                     
                 <Project 
                     filter={filter}
                     type="Frontend Mentor"
                     title="Tip Calculator App" 
-                    description="Yet another Frontend Mentor project... More detailed description to come!." />
+                    description="Yet another Frontend Mentor project... More detailed description to come!" />
                     
                 <Project 
                     filter={filter}
                     type="Frontend Mentor"
                     title="Password Generator App" 
-                    description="Yet another Frontend Mentor project... More detailed description to come!." />
+                    description="Yet another Frontend Mentor project... More detailed description to come!" />
                     
                 <Project 
                     filter={filter}
                     type="Frontend Mentor"
                     title="Results Summary Component" 
-                    description="Yet another Frontend Mentor project... More detailed description to come!." />
+                    description="Yet another Frontend Mentor project... More detailed description to come!" />
 
                 <Project 
                     filter={filter}
