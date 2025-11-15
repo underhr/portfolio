@@ -18,14 +18,8 @@ export default function Projects() {
             <div className='flex flex-wrap justify-evenly gap-4 sm:gap-10'>
                 <Project 
                     filter={filter}
-                    type="Freelance"
-                    title="Mcdonald Construction" 
-                    description="This was my first freelance project, although it is no longer in use." />
-                    
-                <Project 
-                    filter={filter}
                     type="Personal"
-                    title="My Portfolio" 
+                    title="Portfolio" 
                     description="You've been here the whole time! This page was created with React, Vite, and Tailwind." />
 
                 <Project
@@ -39,6 +33,12 @@ export default function Projects() {
                     type="Personal"
                     title="Tilt N Shout" 
                     description="I made this to practice JavaScript by recreating a real life game" />
+
+                <Project 
+                    filter={filter}
+                    type="Freelance"
+                    title="Mcdonald Construction" 
+                    description="This was my first freelance project, although it is no longer in use." />
 
                 <Project 
                     filter={filter}
