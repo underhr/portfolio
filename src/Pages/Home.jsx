@@ -21,7 +21,7 @@ export default function Home() {
                 </h2>
             </header>
 
-            <hr className='p-1 sm:p-2 lg:p-3 bg-(--bg-darker)transition-colors duration-300 border-0' />
+            <hr className='p-1 sm:p-2 lg:p-3 bg-(--bg-darker) transition-colors duration-300 border-0' />
 
             <h2 className="text-2xl sm:text-3xl lg:text-4xl text(--text-darker) w-fit self-center font-semibold">
                 My Skills
